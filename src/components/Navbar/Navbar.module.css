@@ -1,0 +1,28 @@
+@import url(../../styles/sizes.css);
+@import url(../../styles/colors.css);
+
+.navbar {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  list-style: none !important;
+}
+
+.link {
+  color: var(--headerBg) !important;
+  font-size: 18px;
+  font-weight: var(--fontWeight400);
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0 20px;
+}
+
+.logo {
+  width: 100%;
+  object-fit: cover;
+}

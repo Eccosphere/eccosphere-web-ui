@@ -1,0 +1,85 @@
+.contactContainer {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero {
+  background-color: #f4f4f4;
+  padding: 50px;
+  margin-bottom: 30px;
+}
+
+.contactInfo {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.infoBox {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.contactForm {
+  margin: 40px 0;
+}
+
+.contactForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contactForm button {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contactForm button:hover {
+  background-color: #e64a19;
+}
+
+.mapSection {
+  margin: 50px 0;
+}
+
+.map {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 10px;
+}
+
+.socialMedia {
+  margin-top: 30px;
+}
+
+.socialIcons a {
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+}
+
+.socialIcons a:hover {
+  color: #ff5722;
+}
