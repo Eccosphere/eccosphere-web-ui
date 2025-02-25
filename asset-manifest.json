@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/eccosphere-web-ui/static/css/main.994e9bb2.css",
+    "main.js": "/eccosphere-web-ui/static/js/main.b5c06dc7.js",
+    "static/js/488.bac4a611.chunk.js": "/eccosphere-web-ui/static/js/488.bac4a611.chunk.js",
+    "static/media/IMG_20181013_151720-01-01.jpeg": "/eccosphere-web-ui/static/media/IMG_20181013_151720-01-01.1adf9c65600f88a688bf.jpeg",
+    "static/media/lord_buddha.jpg": "/eccosphere-web-ui/static/media/lord_buddha.184ff7af18912e7643a5.jpg",
+    "static/media/2(1).jpg": "/eccosphere-web-ui/static/media/2(1).7cd842b00dc2df07e949.jpg",
+    "static/media/1(1).jpg": "/eccosphere-web-ui/static/media/1(1).927962025701ad1867e1.jpg",
+    "static/media/7(1).jpg": "/eccosphere-web-ui/static/media/7(1).b711a6bae801b5d4e6ce.jpg",
+    "static/media/5(1).jpg": "/eccosphere-web-ui/static/media/5(1).8b0d6e559c8322ad787e.jpg",
+    "static/media/5.jpg": "/eccosphere-web-ui/static/media/5.8b0d6e559c8322ad787e.jpg",
+    "static/media/dummy.png": "/eccosphere-web-ui/static/media/dummy.f192c4b97fbc8b113002.png",
+    "static/media/mohtashim_aquil.jpeg": "/eccosphere-web-ui/static/media/mohtashim_aquil.25cadf612377374fa007.jpeg",
+    "static/media/2b04ed66-5266-462e-a866-ae810d7b4d2f.png": "/eccosphere-web-ui/static/media/2b04ed66-5266-462e-a866-ae810d7b4d2f.15ac3f3c143520d0eff8.png",
+    "static/media/gautam_duggal.jpg": "/eccosphere-web-ui/static/media/gautam_duggal.2568434700c318750164.jpg",
+    "static/media/instagram.svg": "/eccosphere-web-ui/static/media/instagram.70d29913cf563eb98ff32ad58158d990.svg",
+    "static/media/linkedin.svg": "/eccosphere-web-ui/static/media/linkedin.633e014640df6a2c3a4a2053962d62ec.svg",
+    "index.html": "/eccosphere-web-ui/index.html",
+    "static/media/facebook.svg": "/eccosphere-web-ui/static/media/facebook.62df1375a5ed03dffc3696f7855c11c0.svg",
+    "static/media/twitter.svg": "/eccosphere-web-ui/static/media/twitter.38ae27ba85798dff53889e0846485308.svg",
+    "main.994e9bb2.css.map": "/eccosphere-web-ui/static/css/main.994e9bb2.css.map",
+    "main.b5c06dc7.js.map": "/eccosphere-web-ui/static/js/main.b5c06dc7.js.map",
+    "488.bac4a611.chunk.js.map": "/eccosphere-web-ui/static/js/488.bac4a611.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.994e9bb2.css",
+    "static/js/main.b5c06dc7.js"
+  ]
+}
