@@ -20,7 +20,7 @@ const AppRoutes = () => {
           <Route path="/" element={<Home setTitle={setTitle} />} />
           <Route path="/about" element={<About setTitle={setTitle} />} />
           <Route path="/contact" element={<Contact setTitle={setTitle} />} />
-          <Route path="/contact" element={<Gallery setTitle={setTitle} />} />
+          <Route path="/gallery" element={<Gallery setTitle={setTitle} />} />
         </Routes>
       </EccoLayout>
     </Router>
