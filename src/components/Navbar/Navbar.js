@@ -9,9 +9,9 @@ const Navbar = () => {
     return data.map((item, index) => {
       return (
         <li key={index}>
-          <a className={styles["link"]} href={item.link}>
+          <Link className={styles["link"]} to={item.link}>
             {item.name}
-          </a>
+          </Link>
         </li>
       );
     });
