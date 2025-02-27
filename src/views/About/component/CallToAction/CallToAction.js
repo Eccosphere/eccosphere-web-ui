@@ -30,11 +30,13 @@ const CallToAction = () => {
             title="Google Ads Form"
             aria-label="Google Ads"
             frameBorder="0"
+            className={styles["google-ads"]}
             style={{
               height: "100%",
               width: "99%",
               border: "none",
               backgroundColor: "#d0dee1 !important",
+              borderRadius: "15px",
             }}
             src="https://forms.zohopublic.in/eccosphere/form/GoogleAds/formperma/hMd2RMdI15dhheK5KlZg-0GriK870jjSoT4_OAFFNfY"
           />

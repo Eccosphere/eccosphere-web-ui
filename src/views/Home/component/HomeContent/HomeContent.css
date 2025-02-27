@@ -20,7 +20,8 @@
 }
 
 .home-text {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
+  font-weight: lighter;
   color: #555;
   line-height: 1.6;
   margin-bottom: 10px;
@@ -63,7 +64,7 @@
   }
 
   .home-content {
-    padding-right: 0; 
+    padding-right: 0;
     margin-bottom: 30px;
   }
 

@@ -5,6 +5,7 @@ import Home from "../views/Home";
 import About from "../views/About";
 import Contact from "../views/ContactUs";
 import Gallery from "../views/Gallery";
+import Blog from "../views/Blog";
 
 const AppRoutes = () => {
   const [title, setTitle] = useState("Eccosphere");
@@ -29,6 +30,7 @@ const AppRoutes = () => {
             path="/gallery"
             element={<Gallery setTitle={setTitle} />}
           />
+          <Route exact path="/blog" element={<Blog setTitle={setTitle} />} />
         </Routes>
       </EccoLayout>
     </Router>

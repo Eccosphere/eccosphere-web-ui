@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./MembershipPlan.module.css";
 import { membershipPlan } from "../../config/homeData";
+import { Link } from "react-router-dom";
 
 const MembershipPlan = () => {
   return (
@@ -20,7 +21,9 @@ const MembershipPlan = () => {
                 <p className="body-md">{plan.description}</p>
                 <p className="body-lg">*Terms and Condition Applied</p>
                 <div className="div-center">
-                  <button className={styles["card-btn"]}>Call us Now</button>
+                  <Link to={"tel:+918506054055"}>
+                    <button className={styles["card-btn"]}>Call us Now</button>
+                  </Link>
                 </div>
               </div>
             </div>

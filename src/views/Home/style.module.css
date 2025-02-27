@@ -14,12 +14,18 @@
 .space-img {
   width: 100vw;
   height: 70vh;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .home-container {
   width: 90%;
   padding: 1.5rem;
+}
+
+.amenities-container {
+  width: 100%;
+  padding: 1.5rem;
+  background-color: black;
 }
 
 .header-div {
@@ -64,4 +70,14 @@
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   text-align: center;
   padding: 0.5rem;
+}
+
+.modal {
+  height: 42rem;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+::-webkit-scrollbar {
+  display: none;
 }

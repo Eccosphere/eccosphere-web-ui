@@ -2,7 +2,7 @@ import React from "react";
 import { FaBullseye, FaGlobe, FaHandshake } from "react-icons/fa";
 import mohtashimAquil from "../../../assets/teamImages/mohtashim_aquil.jpeg";
 import gautamDuggal from "../../../assets/teamImages/gautam_duggal.jpg";
-import dummy from "../../../assets/teamImages/dummy.png";
+import sameerIqbal from "../../../assets/teamImages/blue-circle-with-white-user.avif";
 import img from "../../../assets/spaceImages/IMG_20181013_151720-01-01.jpeg";
 
 export const missionAndVision = [
@@ -58,7 +58,7 @@ export const teamMembers = [
     id: 3,
     name: "Sameer Iqbal",
     role: "Co-Director",
-    image: dummy,
+    image: sameerIqbal,
     bio: "Ensuring seamless operations and an efficient coworking experience.",
   },
 ];

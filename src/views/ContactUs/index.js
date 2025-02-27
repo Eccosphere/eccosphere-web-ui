@@ -29,7 +29,7 @@ const Contact = () => {
       {/* Contact Form Section */}
       <section className={styles.contactForm}>
         <h2>Send Us a Message</h2>
-        <form>
+        {/* <form>
           <input type="text" name="name" placeholder="Your Name" required />
           <input type="email" name="email" placeholder="Your Email" required />
           <textarea
@@ -39,7 +39,19 @@ const Contact = () => {
             required
           ></textarea>
           <button type="submit">Send Message</button>
-        </form>
+        </form> */}
+        <iframe
+          title="Google Ads Form"
+          aria-label="Google Ads"
+          frameBorder="0"
+          style={{
+            height: "100%",
+            width: "50%",
+            border: "none",
+            backgroundColor: "#ffffff !important",
+          }}
+          src="https://forms.zohopublic.in/eccosphere/form/GoogleAds/formperma/hMd2RMdI15dhheK5KlZg-0GriK870jjSoT4_OAFFNfY"
+        />
       </section>
 
       {/* Google Maps Section */}

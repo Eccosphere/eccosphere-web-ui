@@ -1,11 +1,63 @@
-.amenities-container {
+.amenities {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
+  padding: 50px 20px;
+  border-radius: 15px;
 }
 
-.amenities {
-  width: 90%;
+.amenities-container {
+  width: 100%;
+  padding: 1rem;
+  height: auto;
+}
+
+.amenities-title {
+  padding-bottom: 2.5rem;
+  text-align: center;
+}
+
+.heading-text {
+  color: #fff;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+}
+
+.amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.amenities-card {
+  overflow: hidden;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.amenities-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.amenities-content {
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.amenities-title-text {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.amenities-description {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 12px;
 }
