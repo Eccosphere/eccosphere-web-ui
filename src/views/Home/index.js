@@ -10,6 +10,7 @@ import CommunityTestimonials from "./component/CommunityTestimonials/CommunityTe
 import HomeContent from "./component/HomeContent/HomeContent";
 import Amenities from "./component/Amenities/Amenities";
 import PopModal from "../../components/PopModal";
+import GoogleAdsForm from "../../components/GoogleAdsForm/GoogleAdsForm";
 
 const Home = (props) => {
   const { setTitle } = props;
@@ -42,7 +43,7 @@ const Home = (props) => {
           pause="hover"
         >
           {imageGallery.map((img) => (
-            <Carousel.Item interval={10000} className={"h-100"} key={img.id}>
+            <Carousel.Item interval={3000} className={"h-100"} key={img.id}>
               <img
                 src={img.src}
                 alt={`space-img-${img.id}`}
@@ -95,17 +96,9 @@ const Home = (props) => {
         size={"lg"}
         className={styles["modal"]}
       >
-        <iframe
-          title="Google Ads Form"
-          aria-label="Google Ads"
-          frameBorder="0"
-          style={{
-            height: "100%",
-            width: "99%",
-            border: "none",
-            backgroundColor: "#ffffff !important",
-          }}
-          src="https://forms.zohopublic.in/eccosphere/form/GoogleAds/formperma/hMd2RMdI15dhheK5KlZg-0GriK870jjSoT4_OAFFNfY"
+        <GoogleAdsForm
+          className={styles["google-ads"]}
+          heading={"Book a Tour"}
         />
       </PopModal>
     </div>

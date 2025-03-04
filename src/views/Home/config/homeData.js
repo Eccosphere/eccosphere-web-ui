@@ -1,5 +1,4 @@
 import React from "react";
-import img1 from "../../../assets/spaceImages/1(1).jpg";
 import img2 from "../../../assets/spaceImages/2(1).jpg";
 import img3 from "../../../assets/spaceImages/5(1).jpg";
 import img4 from "../../../assets/spaceImages/7(1).jpg";
@@ -12,9 +11,9 @@ import openSeat from "../../../assets/spaceImages/open_seats.jpg";
 
 export const imageGallery = [
   { id: 1, src: openSeat },
-  { id: 2, src: img2 },
-  { id: 3, src: img3 },
-  { id: 4, src: img1 },
+  { id: 2, src: meetingRoom },
+  { id: 3, src: dedicatedDesk },
+  { id: 4, src: eventSpace },
 ];
 
 export const membershipPlan = [
@@ -132,6 +131,7 @@ export const workspaces = [
   { id: 2, name: "Open Workspaces", image: img2 },
   { id: 3, name: "Meeting Rooms", image: meetingRoom },
   { id: 4, name: "Community Café", image: img4 },
+  { id: 5, name: "Event Space", image: eventSpace },
 ];
 
 export const testimonials = [

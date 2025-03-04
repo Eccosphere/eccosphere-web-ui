@@ -10,7 +10,7 @@ const OurWorkspaces = () => {
           <h2 className={styles["heading-text"]}> Our Workspaces</h2>
         </div>
 
-        <div className="div-space-around f-wrap">
+        <div className="div-space-between f-wrap">
           {workspaces.map((item) => (
             <div key={item.id} className={styles["card"]}>
               <img

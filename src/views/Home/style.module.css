@@ -73,11 +73,16 @@
 }
 
 .modal {
-  height: 42rem;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+.google-ads {
+  box-shadow: none !important;
+  border: none !important;
+  padding: 15px 0 0 0 !important;
 }

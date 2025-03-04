@@ -5,7 +5,6 @@ import { ReactComponent as LinkedinIconSVG } from "../../assets/iconSvg/linkedin
 import { ReactComponent as TwitterIconSVG } from "../../assets/iconSvg/twitter.svg";
 import styles from "./EccoFooter.module.css";
 import logo from "../../assets/logo/2b04ed66-5266-462e-a866-ae810d7b4d2f.png";
-import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 const EccoFooter = () => {
@@ -32,7 +31,7 @@ const EccoFooter = () => {
           Email - chandank@eccosphere.com
         </p>
         <p className={`${styles["footer-no-text"]} mb-3`}>
-          Toll Free - 18001204909
+          Call Us Now - +918506054055
         </p>
 
         <div className={styles["text-div"]}>
@@ -66,8 +65,3 @@ const EccoFooter = () => {
 };
 
 export default EccoFooter;
-
-EccoFooter.propTypes = {
-  footerBlogList: PropTypes.array,
-  footerCompanyList: PropTypes.array,
-};

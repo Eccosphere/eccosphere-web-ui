@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./style.module.css";
 import { images } from "./config/galleryData";
+import PropTypes from "prop-types";
 
-const Gallery = () => {
+const Gallery = (props) => {
+  const { setTitle } = props;
+
+  useEffect(() => {
+    setTitle("Eccosphere - Gallery");
+  }, [setTitle]);
+
   return (
     <div className={styles["gallery"]}>
       <div className={styles["gallery-container"]}>
@@ -26,6 +33,10 @@ const Gallery = () => {
       </div>
     </div>
   );
+};
+
+Gallery.propTypes = {
+  setTitle: PropTypes.func.isRequired,
 };
 
 export default Gallery;
