@@ -1,3 +1,6 @@
+@import url(../../../../styles/sizes.css);
+@import url(../../../../styles/colors.css);
+
 .membership-plan-container {
   width: 100%;
   display: flex;
@@ -57,4 +60,59 @@
   background-color: #ffffff;
   color: #000000;
   border: 1px solid #000000;
+}
+
+.body-md {
+  color: var(--labelText);
+  font-size: var(--md);
+  font-weight: var(--fontWeight400);
+}
+
+.body-lg {
+  color: var(--labelText);
+  font-size: var(--lg);
+  font-weight: var(--fontWeight500);
+}
+
+@media screen and (max-width: 768px) {
+  .membership-plan-container {
+    padding: 0;
+  }
+
+  .membership-plan {
+    width: 100%;
+    text-align: center;
+  }
+
+  .membership-plan h1 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+
+  .card {
+    width: 100%;
+    height: fit-content;
+    padding: 0 0 1.5rem 0;
+  }
+
+  .card-img {
+    height: 200px;
+  }
+
+  .card-btn {
+    font-size: 12px;
+  }
+
+  .card-header {
+    font-size: 16px;
+  }
+
+  .body-md {
+    font-size: 12px;
+  }
+
+  .body-lg {
+    font-size: 14px;
+  }
 }

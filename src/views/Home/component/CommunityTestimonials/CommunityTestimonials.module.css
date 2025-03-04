@@ -95,8 +95,28 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-  .testimonial-slider {
-    height: 220px;
+@media screen and (max-width: 768px) {
+  .testimonials-section {
+    padding: 20px 0;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .testimonial-quote {
+    font-size: 1rem;
+  }
+
+  .testimonial-name {
+    font-size: 0.9rem;
+  }
+
+  .testimonial-company {
+    font-size: 0.75rem;
+  }
+
+  .partners-title {
+    font-size: 1.2rem;
   }
 }

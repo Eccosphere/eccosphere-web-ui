@@ -80,3 +80,35 @@
 .list-item:last-child {
   border-bottom: none;
 }
+
+@media screen and (max-width: 768px) {
+  .why-choose-us {
+    padding: 20px 0;
+  }
+
+  .why-choose-us-container {
+    padding: 0;
+  }
+
+  .why-choose-us-title {
+    padding-bottom: 1rem;
+  }
+
+  .heading-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .card {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .card-title {
+    font-size: 16px;
+  }
+
+  .card-text {
+    font-size: 10px;
+  }
+}

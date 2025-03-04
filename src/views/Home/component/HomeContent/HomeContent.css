@@ -48,19 +48,12 @@
   border-radius: 5px;
 }
 
-.home-card-text {
-  font-size: 1rem;
-  color: #333;
-  margin-top: 10px;
-  font-weight: bold;
-}
-
 /* Responsive Design */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .home-section {
     flex-direction: column;
     text-align: center;
-    padding: 25px 25px;
+    padding: 0;
   }
 
   .home-content {
@@ -69,12 +62,21 @@
   }
 
   .home-images {
-    flex-direction: row;
-    gap: 10px;
-    overflow-x: auto;
+    width: 100%;
   }
 
-  .home-card {
-    min-width: 150px;
+  .home-title {
+    font-size: 1rem;
+  }
+
+  .home-text {
+    font-size: 0.9rem;
+  }
+
+  .home-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
   }
 }

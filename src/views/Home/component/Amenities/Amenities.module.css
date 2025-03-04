@@ -61,3 +61,39 @@
   color: #fff;
   margin-bottom: 12px;
 }
+
+@media screen and (max-width: 768px) {
+  .amenities {
+    padding: 20px 0;
+  }
+
+  .amenities-container {
+    padding: 0;
+  }
+
+  .amenities-title {
+    padding-bottom: 1rem;
+  }
+
+  .heading-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .amenities-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    width: 90%;
+  }
+
+  .amenities-content {
+    padding: 0.5rem;
+  }
+
+  .amenities-title-text {
+    font-size: 15px;
+  }
+
+  .amenities-description {
+    font-size: 10px;
+  }
+}

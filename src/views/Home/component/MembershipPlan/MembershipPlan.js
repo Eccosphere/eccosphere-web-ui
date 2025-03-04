@@ -18,8 +18,10 @@ const MembershipPlan = () => {
               />
               <p className={styles["card-header"]}>{plan.title}</p>
               <div className={styles["card-body"]}>
-                <p className="body-md">{plan.description}</p>
-                <p className="body-lg">*Terms and Condition Applied</p>
+                <p className={styles["body-md"]}>{plan.description}</p>
+                <p className={styles["body-lg"]}>
+                  *Terms and Condition Applied
+                </p>
                 <div className="div-center">
                   <Link to={"tel:+918506054055"}>
                     <button className={styles["card-btn"]}>Call us Now</button>

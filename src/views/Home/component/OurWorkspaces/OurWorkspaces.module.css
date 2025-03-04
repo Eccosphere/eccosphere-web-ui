@@ -89,3 +89,35 @@
 .list-item:last-child {
   border-bottom: none;
 }
+
+@media screen and (max-width: 768px) {
+  .our-workspaces {
+    padding: 20px 0;
+  }
+
+  .our-workspaces-container {
+    padding: 0;
+  }
+
+  .our-workspaces-title {
+    padding-bottom: 1rem;
+  }
+
+  .heading-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card-title {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+  .card-text {
+    font-size: 10px;
+  }
+}
