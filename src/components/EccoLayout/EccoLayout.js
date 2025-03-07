@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import styles from "./EccoLayout.module.css";
 import EccoFooter from "../EccoFooter/EccoFooter";
@@ -7,6 +7,13 @@ import { useLocation } from "react-router-dom";
 
 const EccoLayout = ({ children }) => {
   const location = useLocation();
+  const [isHome, setIsHome] = useState(false);
+
+  useEffect(() => {
+    if (location.pathname === "/") {
+      setIsHome(true);
+    }
+  }, [isHome, location.pathname]);
 
   return (
     <div className={styles["ecco-layout"]}>
@@ -15,7 +22,7 @@ const EccoLayout = ({ children }) => {
       </div>
 
       <div className={styles["ecco-layout-container"]}>
-        {location.pathname === "/" ? (
+        {!isHome ? (
           children
         ) : (
           <div className={styles["layout"]}>{children}</div>
