@@ -50,3 +50,29 @@
 .gallery-item:hover {
   transform: scale(1.05);
 }
+
+@media screen and (max-width: 768px) {
+  .gallery-container {
+    width: 100%;
+    padding: 0.5rem 0;
+  }
+
+  .header-div {
+    padding: 0.75rem;
+  }
+
+  .heading-text {
+    font-size: 1rem;
+  }
+
+  .gallery-grid {
+    display: flex;
+    flex-direction: column;
+    max-width: 260px;
+    padding-top: 1rem;
+  }
+
+  .gallery-item img {
+    height: 250px;
+  }
+}

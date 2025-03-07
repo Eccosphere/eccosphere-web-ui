@@ -4,6 +4,9 @@ import mohtashimAquil from "../../../assets/teamImages/mohtashim_aquil.jpeg";
 import gautamDuggal from "../../../assets/teamImages/gautam_duggal.jpg";
 import sameerIqbal from "../../../assets/teamImages/blue-circle-with-white-user.avif";
 import img from "../../../assets/spaceImages/IMG_20181013_151720-01-01.jpeg";
+import img1 from "../../../assets/images/Tree_1.jpg";
+import img2 from "../../../assets/spaceImages/1(1).jpg";
+import img3 from "../../../assets/spaceImages/2(1).jpg";
 
 export const missionAndVision = [
   {
@@ -76,14 +79,14 @@ export const whyChooseUs = [
     title: "Creativity & Innovation Hub",
     description:
       "Our environment is designed to spark creativity, innovation, and breakthroughs.",
-    images: img,
+    images: img1,
   },
   {
     id: 3,
     title: "Community-Driven",
     description:
       "Network with entrepreneurs, freelancers, and small businesses to collaborate and scale together.",
-    images: img,
+    images: img2,
   },
   {
     id: 4,
@@ -94,6 +97,6 @@ export const whyChooseUs = [
         list: "Fitness Center & Meditation Zones to boost mind & body wellness.",
       },
     ],
-    images: img,
+    images: img3,
   },
 ];

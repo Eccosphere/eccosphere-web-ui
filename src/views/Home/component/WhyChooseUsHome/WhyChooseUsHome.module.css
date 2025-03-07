@@ -23,6 +23,7 @@
 
 .card {
   width: 30%;
+  height: 200px;
   padding: 1rem;
   background: linear-gradient(135deg, #0b2b3e 0%, #0493a5 100%);
   backdrop-filter: blur(10px);

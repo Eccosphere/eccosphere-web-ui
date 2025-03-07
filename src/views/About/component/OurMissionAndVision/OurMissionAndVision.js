@@ -9,7 +9,7 @@ const OurMissionAndVision = () => {
         <div className={styles["our-mission-tittle"]}>
           <h2 className={styles["heading-text"]}>Our Mission & Vision</h2>
         </div>
-        <div className="div-space-around">
+        <div className={styles["card-container"]}>
           {missionAndVision.map((item) => (
             <div key={item.id} className={styles["card"]}>
               <div className="div-center">

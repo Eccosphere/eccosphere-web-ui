@@ -44,3 +44,50 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
+.map {
+  width: 100%;
+  height: 450px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .ctaSection {
+    padding: 20px 5px;
+  }
+
+  .ctaContent {
+    padding: 1rem;
+  }
+
+  .ctaHeading {
+    font-size: 1.375rem;
+  }
+
+  .ctaText {
+    font-size: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .ctaDiv {
+    flex-direction: column;
+  }
+
+  .ctaMapSection {
+    width: 100%;
+    padding: 20px 5px;
+    border-radius: 0;
+  }
+
+  .ctaForm {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .map {
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+  }
+}

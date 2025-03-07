@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./OurStory.module.css";
 import spaceImage from "../../../../assets/spaceImages/IMG_20181013_151720-01-01.jpeg";
+import img10 from "../../../../assets/spaceImages/dedicated_desk.jpeg";
 
 const OurStory = () => {
   return (
@@ -42,7 +43,7 @@ const OurStory = () => {
               className={styles["card-image"]}
             />
             <img
-              src={spaceImage}
+              src={img10}
               alt="Eccosphere-coworking"
               className={styles["card-image-II"]}
             />
