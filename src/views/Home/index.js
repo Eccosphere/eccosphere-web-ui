@@ -43,7 +43,7 @@ const Home = (props) => {
           pause="hover"
         >
           {imageGallery.map((img) => (
-            <Carousel.Item className={"h-100"} key={img.id}>
+            <Carousel.Item interval={3000} className={"h-100"} key={img.id}>
               <img
                 src={img.src}
                 alt={`space-img-${img.id}`}
@@ -51,17 +51,17 @@ const Home = (props) => {
               />
             </Carousel.Item>
           ))}
-          <div className={styles["header-div"]}>
-            <div className={styles["text-div"]}>
-              <h1 className={styles["heading-text"]}>
-                Community, creativity, comfort & more
-              </h1>
-              <button className={styles["btn"]} onClick={handleOpenModal}>
-                Contact Us
-              </button>
-            </div>
-          </div>
         </Carousel>
+        <div className={styles["header-div"]}>
+          <div className={styles["text-div"]}>
+            <h1 className={styles["heading-text"]}>
+              Community, creativity, comfort & more
+            </h1>
+            <button className={styles["btn"]} onClick={handleOpenModal}>
+              Contact Us
+            </button>
+          </div>
+        </div>
       </div>
 
       <div className={styles["home"]}>
