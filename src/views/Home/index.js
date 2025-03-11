@@ -37,14 +37,13 @@ const Home = (props) => {
       <div className={styles["image-container"]}>
         <Carousel
           className="w-100 h-70"
-          slide={false}
+          slide={true}
           indicators={false}
           controls={false}
-          wrap={false}
           pause="hover"
         >
           {imageGallery.map((img) => (
-            <Carousel.Item interval={3000} className={"h-100"} key={img.id}>
+            <Carousel.Item interval={1000} className={"h-100"} key={img.id}>
               <img
                 src={img.src}
                 alt={`space-img-${img.id}`}
