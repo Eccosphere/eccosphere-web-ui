@@ -3,13 +3,18 @@ import PropTypes from "prop-types";
 import styles from "./BlogCard.module.css";
 import PopModal from "../../../components/PopModal";
 import BlogDetailCard from "./BlogDetailCard";
+import img from "../../../assets/logo/New Eccosphere Logo (1).png";
 
 const BlogCard = ({ blog }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div key={blog.id} className={styles["blog-card"]}>
-      <img src={blog.img} className={styles["blog-image"]} alt={blog.title} />
+      <img
+        src={blog.img ? blog.img : img}
+        className={styles["blog-image"]}
+        alt={blog.title}
+      />
       <div className={styles["blog-content"]}>
         <p className={styles["blog-title"]}>{blog.title}</p>
         <p className={styles["blog-description"]}>{blog.description}</p>
@@ -20,7 +25,12 @@ const BlogCard = ({ blog }) => {
           Read More
         </button>
       </div>
-      <PopModal onClose={() => setIsOpen(false)} isOpen={isOpen} size="lg">
+      <PopModal
+        onClose={() => setIsOpen(false)}
+        isOpen={isOpen}
+        size="lg"
+        className="p-0"
+      >
         <BlogDetailCard blog={blog} />
       </PopModal>
     </div>

@@ -1,4 +1,3 @@
-import img from "../../../assets/logo/New Eccosphere Logo (1).png";
 import img1 from "../../../assets/images/Event area_12.jpg";
 import zenGarden from "../../../assets/spaceImages/zen_garden.jpeg";
 import meetingRoom from "../../../assets/spaceImages/meeting_room.jpeg";
