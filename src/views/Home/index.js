@@ -40,6 +40,7 @@ const Home = (props) => {
           slide={false}
           indicators={false}
           controls={false}
+          wrap={false}
           pause="hover"
         >
           {imageGallery.map((img) => (
