@@ -4,31 +4,35 @@ import PropTypes from "prop-types";
 import { ReactComponent as CloseIconSVG } from "../../assets/iconSvg/close.svg";
 import LogoSVG from "../../assets/logo/ecco_logo.png";
 
-const GoogleAdsForm = ({ className, heading, setOpenModal }) => {
+const GoogleAdsForm = ({
+  className,
+  heading,
+  setOpenModal,
+  iframeClass,
+  icon,
+}) => {
   const handleClose = () => {
     setOpenModal(false);
   };
 
   return (
     <div className={`${styles.iframeContainer} ${className}`}>
-      <div className="w-100 d-flex">
-        <div className="w-20">
-          <img src={LogoSVG} alt="eccosphere-logo" className={styles.logo} />
-        </div>
-        <div className="w-70 div-center">
+      <div className={`w-100 d-flex ${styles.headerContainer}`}>
+        <img src={LogoSVG} alt="eccosphere-logo" className={styles.logo} />
+        <div className={styles.headingWrapper}>
           <h2 className={styles.headingText}>{heading}</h2>
         </div>
-        <div className="w-10 p-relative">
+        {icon && (
           <button className={styles.btnClose} onClick={handleClose}>
             <CloseIconSVG className={styles.closeIcon} />
           </button>
-        </div>
+        )}
       </div>
       <iframe
         title="Google Ads Form"
         aria-label="Google Ads"
         frameBorder="0"
-        className={styles.iframe}
+        className={`${styles.iframe} ${iframeClass}`}
         src="https://forms.zohopublic.in/eccosphere/form/GoogleAds/formperma/hMd2RMdI15dhheK5KlZg-0GriK870jjSoT4_OAFFNfY"
       />
     </div>
@@ -39,6 +43,8 @@ GoogleAdsForm.propTypes = {
   className: PropTypes.string,
   heading: PropTypes.string.isRequired,
   setOpenModal: PropTypes.func.isRequired,
+  iframeClass: PropTypes.string,
+  icon: PropTypes.bool,
 };
 
 export default GoogleAdsForm;

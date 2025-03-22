@@ -30,7 +30,11 @@ const Contact = () => {
       {/* Contact Form Section */}
       <section className={styles.contactForm}>
         <div className={styles.formContainer}>
-          <GoogleAdsForm heading={"Request a Call Back"} iframeClass={styles.formHeight} />
+          <GoogleAdsForm
+            heading={"Request a Call Back"}
+            iframeClass={styles.formHeight}
+            icon={false}
+          />
         </div>
       </section>
 

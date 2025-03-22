@@ -19,6 +19,22 @@
   background-color: white;
 }
 
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Distribute elements evenly */
+  position: relative;
+  width: 100%;
+}
+
+.headingWrapper {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); /* Keeps the heading centered */
+  text-align: center;
+  width: max-content;
+}
+
 .headingText {
   color: var(--headerBg2);
   font-weight: 400;
@@ -29,15 +45,12 @@
   background: transparent;
   border: none;
   cursor: pointer;
-  position: absolute;
-  top: 0px;
-  right: 5px;
-  padding: 0;
   color: #ccc;
 }
 
 .closeIcon {
   width: 15px;
+  margin-bottom: 1rem;
 }
 
 .logo {
@@ -50,11 +63,11 @@
     padding: 10px 0 0 0;
   }
 
-  .iframe {
-    height: 100vh;
-  }
-
   .headingText {
     font-size: 1.2rem;
+  }
+
+  .headerContainer {
+    padding: 0 10px;
   }
 }

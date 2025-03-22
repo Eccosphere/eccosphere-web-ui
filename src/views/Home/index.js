@@ -100,6 +100,7 @@ const Home = (props) => {
           className={styles["google-ads"]}
           heading={"Book a Tour"}
           setOpenModal={setOpenModal}
+          icon={true}
         />
       </PopModal>
     </div>
