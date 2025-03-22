@@ -15,6 +15,8 @@ const EccoLayout = ({ children }) => {
     }
   }, [isHome, location.pathname]);
 
+  console.log(isHome, "isHome");
+
   return (
     <div className={styles["ecco-layout"]}>
       <div className={styles["ecco-header"]}>
@@ -22,7 +24,11 @@ const EccoLayout = ({ children }) => {
       </div>
 
       <div className={styles["ecco-layout-container"]}>
-        {isHome ? children : <div className={styles["layout"]}>{children}</div>}
+        {!isHome ? (
+          <div className={styles["layout"]}>{children}</div>
+        ) : (
+          children
+        )}
       </div>
 
       <div className={styles["ecco-layout-footer"]}>
