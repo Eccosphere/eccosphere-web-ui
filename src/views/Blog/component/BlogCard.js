@@ -31,7 +31,7 @@ const BlogCard = ({ blog }) => {
         size="lg"
         className="p-0"
       >
-        <BlogDetailCard blog={blog} />
+        <BlogDetailCard blog={blog} setIsOpen={setIsOpen} />
       </PopModal>
     </div>
   );

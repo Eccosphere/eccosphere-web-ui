@@ -99,6 +99,7 @@ const Home = (props) => {
         <GoogleAdsForm
           className={styles["google-ads"]}
           heading={"Book a Tour"}
+          setOpenModal={setOpenModal}
         />
       </PopModal>
     </div>

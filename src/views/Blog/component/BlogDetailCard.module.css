@@ -4,6 +4,7 @@
   background: #fff;
   border-radius: 8px;
   overflow: hidden;
+  position: relative;
 }
 
 .blogImage {
@@ -37,6 +38,21 @@
   font-size: 16px;
   color: #444;
   line-height: 1.6;
+}
+
+.btnClose {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  padding: 0;
+  color: #ccc;
+}
+
+.closeIcon {
+  width: 10px;
 }
 
 /* Responsive Design */
