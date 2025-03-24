@@ -53,4 +53,8 @@
   .ecco-layout-container {
     margin-top: 14.9%;
   }
+
+  .layout {
+    padding: 1.5rem 0;
+  }
 }

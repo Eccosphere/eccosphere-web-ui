@@ -10,10 +10,8 @@ const EccoLayout = ({ children }) => {
   const [isHome, setIsHome] = useState(false);
 
   useEffect(() => {
-    if (location.pathname === "/") {
-      setIsHome(true);
-    }
-  }, [isHome, location.pathname]);
+    setIsHome(location.pathname === "/");
+  }, [location.pathname]);
 
   console.log(isHome, "isHome");
 
@@ -24,7 +22,7 @@ const EccoLayout = ({ children }) => {
       </div>
 
       <div className={styles["ecco-layout-container"]}>
-        <div className={!isHome ? styles["layout"] : "w-100"}>{children}</div>
+        <div className={isHome ? "w-100" : styles["layout"]}>{children}</div>
       </div>
 
       <div className={styles["ecco-layout-footer"]}>
