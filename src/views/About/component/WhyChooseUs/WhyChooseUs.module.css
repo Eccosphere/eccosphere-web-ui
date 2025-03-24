@@ -58,10 +58,6 @@
   transition: transform 0.3s ease;
 }
 
-.card:hover .card-images {
-  transform: scale(1.05);
-}
-
 /* Content Styling */
 .card-content {
   padding: 15px;
