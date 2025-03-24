@@ -35,6 +35,10 @@
   padding: 2.5rem 0.5rem;
 }
 
+.home-layout {
+  width: 100%;
+}
+
 .ecco-layout-footer {
   width: 100%;
   border-top: 0.5px solid var(--defaultTextFieldBorder);

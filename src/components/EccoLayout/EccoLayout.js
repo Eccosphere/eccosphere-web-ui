@@ -24,11 +24,7 @@ const EccoLayout = ({ children }) => {
       </div>
 
       <div className={styles["ecco-layout-container"]}>
-        {!isHome ? (
-          <div className={styles["layout"]}>{children}</div>
-        ) : (
-          children
-        )}
+        <div className={!isHome ? styles["layout"] : "w-100"}>{children}</div>
       </div>
 
       <div className={styles["ecco-layout-footer"]}>
