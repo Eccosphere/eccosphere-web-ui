@@ -18,8 +18,8 @@ const GoogleAdsForm = ({
   return (
     <div className={`${styles.iframeContainer} ${className}`}>
       <div className={`w-100 d-flex ${styles.headerContainer}`}>
-        <img src={LogoSVG} alt="eccosphere-logo" className={styles.logo} />
         <div className={styles.headingWrapper}>
+          <img src={LogoSVG} alt="eccosphere-logo" className={styles.logo} />
           <h2 className={styles.headingText}>{heading}</h2>
         </div>
         {icon && (

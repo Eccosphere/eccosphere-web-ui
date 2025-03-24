@@ -4,7 +4,7 @@ import { ReactComponent as InstagramIconSVG } from "../../assets/iconSvg/instagr
 import { ReactComponent as LinkedinIconSVG } from "../../assets/iconSvg/linkedin.svg";
 import { ReactComponent as TwitterIconSVG } from "../../assets/iconSvg/twitter.svg";
 import styles from "./EccoFooter.module.css";
-import logo from "../../assets/logo/2b04ed66-5266-462e-a866-ae810d7b4d2f.png";
+import logo from "../../assets/logo/eccosphere.png";
 import { Link } from "react-router-dom";
 
 const EccoFooter = () => {

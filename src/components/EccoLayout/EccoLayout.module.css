@@ -11,8 +11,8 @@
 .ecco-header {
   width: 100%;
   height: 10%;
-  background: linear-gradient(135deg, #0493a51a 0%, #e1ffff 100%);
-  background-color: var(--headerBg4);
+  background-color: #f9f9f9;
+  border-bottom: 0.5px solid var(--defaultTextFieldBorder);
   color: var(--white) !important;
   display: flex;
   justify-content: center;
@@ -38,7 +38,7 @@
 .ecco-layout-footer {
   width: 100%;
   border-top: 0.5px solid var(--defaultTextFieldBorder);
-  background: linear-gradient(135deg, #0493a51a 0%, #e1ffff 100%);
+  background-color: #f9f9f9;
   padding: 1rem;
 }
 

@@ -17,7 +17,7 @@ const OurStory = () => {
             <p className={styles.description}>
               At Eccosphere, we understand that workspaces shape productivity,
               creativity, and success. That’s why we didn’t just create another
-              coworking space—we built a dynamic environment where ideas thrive,
+              coworking space we built a dynamic environment where ideas thrive,
               teams grow, and businesses scale.
             </p>
 
@@ -26,12 +26,12 @@ const OurStory = () => {
               management consultant, discovered the growing coworking culture in
               India. Inspired by the global shift towards flexible workspaces,
               he envisioned a holistic workplace that nurtures Mind, Body, and
-              Work—a space where professionals could connect, create, and grow
+              Work a space where professionals could connect, create, and grow
               beyond the traditional office model.
             </p>
 
             <p className={styles.description}>
-              Thus, Eccosphere was born—a coworking space that blends
+              Thus, Eccosphere was born a coworking space that blends
               productivity with wellness, offering an ecosystem that fuels
               growth, innovation, and collaboration.
             </p>

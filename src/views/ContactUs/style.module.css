@@ -60,13 +60,6 @@
   width: 50%;
 }
 
-.map {
-  width: 900px;
-  height: 500px;
-  border-width: 0px;
-  border-radius: 15px;
-}
-
 @media screen and (max-width: 768px) {
   .contactContainer {
     padding: 40px 0;
@@ -99,6 +92,6 @@
   }
 
   .formHeight {
-    height: 100vh !important;
+    height: 90vh !important;
   }
 }

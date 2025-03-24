@@ -1,12 +1,12 @@
-import img1 from "../../../assets/images/Event area_12.jpg";
+import img1 from "../../../assets/spaceImages/indoor_plant.jpg";
 import zenGarden from "../../../assets/spaceImages/zen_garden.jpeg";
 import meetingRoom from "../../../assets/spaceImages/meeting_room.jpeg";
 import events from "../../../assets/spaceImages/event_stage.jpeg";
 import img10 from "../../../assets/spaceImages/dedicated_desk.jpeg";
-import img11 from "../../../assets/spaceImages/7.jpg";
-import img2 from "../../../assets/spaceImages/1(1).jpg";
-import img5 from "../../../assets/spaceImages/8(1).jpg";
-import img6 from "../../../assets/spaceImages/IMG_9122-01.jpeg";
+import img11 from "../../../assets/spaceImages/learning-process.webp";
+import img2 from "../../../assets/spaceImages/yoga.webp";
+import img5 from "../../../assets/spaceImages/invest_you.jpg";
+import img6 from "../../../assets/spaceImages/learn.jpg";
 import img7 from "../../../assets/spaceImages/IMG_20181013_151720-01-01.jpeg";
 
 export const blogData = [
