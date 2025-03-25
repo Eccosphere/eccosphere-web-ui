@@ -41,7 +41,13 @@ const EccoFooter = () => {
               <FacebookIconSVG className={styles["footer-icon"]} />
             </Link>
 
-            <TwitterIconSVG className={styles["footer-icon-two"]} />
+            <Link
+              target="_blank"
+              to={"https://x.com/eccosphere?t=gJxSCljYUuQnqSJ_9Fcipg&s=08"}
+            >
+              <TwitterIconSVG className={styles["footer-icon-two"]} />
+            </Link>
+
             <Link
               target="_blank"
               to={"https://www.instagram.com/eccospherecowork/?hl=en"}
