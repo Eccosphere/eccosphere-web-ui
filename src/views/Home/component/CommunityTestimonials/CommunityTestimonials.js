@@ -1,16 +1,27 @@
 import React, { useState, useEffect } from "react";
 import styles from "./CommunityTestimonials.module.css";
-import { partners, testimonials } from "../../config/homeData";
+import { testimonials } from "../../config/homeData";
 
 const CommunityTestimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isManual, setIsManual] = useState(false);
 
   useEffect(() => {
+    if (isManual) return;
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
     }, 4000);
     return () => clearInterval(interval);
-  }, []);
+  }, [isManual]);
+
+  const handlePartnerClick = (testimonialId) => {
+    const index = testimonials.findIndex((t) => t.id === testimonialId);
+    if (index !== -1) {
+      setCurrentIndex(index);
+      setIsManual(true);
+      setTimeout(() => setIsManual(false), 10000);
+    }
+  };
 
   return (
     <div className={styles["testimonials-section"]}>
@@ -45,13 +56,19 @@ const CommunityTestimonials = () => {
       <div className={styles["partners-section"]}>
         <h3 className={styles["partners-title"]}>Our Trusted Partners</h3>
         <div className={styles["partners-logos"]}>
-          {partners.map((logo, index) => (
-            <img
+          {testimonials.map((obj, index) => (
+            <button
               key={index}
-              src={logo}
-              alt="Partner Logo"
-              className={styles["partner-logo"]}
-            />
+              className={styles["partner-logo-btn"]}
+              onClick={() => handlePartnerClick(obj.id)}
+            >
+              <img
+                key={index}
+                src={obj.image}
+                alt={obj.name}
+                className={styles["partner-logo"]}
+              />
+            </button>
           ))}
         </div>
       </div>
