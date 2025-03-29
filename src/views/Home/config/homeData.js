@@ -151,7 +151,7 @@ export const testimonials = [
   {
     id: 1,
     quote:
-      "Eccosphere has transformed the way I work. Amazing community and work environment!",
+      "Eccosphere has completely transformed my work experience! The vibrant community, inspiring atmosphere, and top-notch facilities make it the perfect place to be productive and connect with like-minded professionals.",
     name: "Sadia Siddiqui​",
     company: "Director Sales-Media",
     image: saddia,
@@ -159,7 +159,7 @@ export const testimonials = [
   {
     id: 2,
     quote:
-      "The best co-working space! Great facilities, networking, and a truly inspiring place.",
+      "My experience at Eccosphere has been truly amazing! The staff is incredibly helpful and welcoming. If you're looking for a top-notch coworking space, Eccosphere in Noida Sector 67 is a must-visit!",
     name: "HIMANSHU JAISWAL",
     company: "HEAD RESEARCH: MARKET RESEARCH",
     image: himanshu,
@@ -167,7 +167,7 @@ export const testimonials = [
   {
     id: 3,
     quote:
-      "The best co-working space! Great facilities, networking, and a truly inspiring place.",
+      "The ambience is great, and the location is convenient, just a short walk from Sector 59 Metro Station. However, parking can be a challenge, so it's best to plan accordingly.",
     name: "Anshul Sharma",
     company: "AVP SALES,INFRA LINES RESEARCH",
     image: anshul,
@@ -175,7 +175,7 @@ export const testimonials = [
   {
     id: 4,
     quote:
-      "The best co-working space! Great facilities, networking, and a truly inspiring place.",
+      "t's a fantastic place to work and collaborate with others. The co-working space is well-designed, offering a productive and comfortable environment. Highly recommended!",
     name: "NIKHIL CHAINANI",
     company: "FOUNDER PERSPECTICO-EDUCATION",
     image: nikhil,

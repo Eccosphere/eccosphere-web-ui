@@ -23,6 +23,11 @@
   display: flex;
   flex-direction: column;
   text-align: justify;
+  height: 200px;
+}
+
+.blog-text {
+  flex-grow: 1; /* Allows text content to take available space */
 }
 
 .blog-title {
@@ -53,6 +58,7 @@
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  margin-top: auto;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 

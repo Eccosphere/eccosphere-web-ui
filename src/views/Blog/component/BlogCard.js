@@ -16,8 +16,10 @@ const BlogCard = ({ blog }) => {
         alt={blog.title}
       />
       <div className={styles["blog-content"]}>
-        <p className={styles["blog-title"]}>{blog.title}</p>
-        <p className={styles["blog-description"]}>{blog.description}</p>
+        <div className={styles["blog-text"]}>
+          <p className={styles["blog-title"]}>{blog.title}</p>
+          <p className={styles["blog-description"]}>{blog.description}</p>
+        </div>
         <button
           className={styles["blog-button"]}
           onClick={() => setIsOpen(true)}
@@ -25,6 +27,7 @@ const BlogCard = ({ blog }) => {
           Read More
         </button>
       </div>
+
       <PopModal
         onClose={() => setIsOpen(false)}
         isOpen={isOpen}
