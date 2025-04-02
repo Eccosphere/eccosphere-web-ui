@@ -2,15 +2,15 @@ import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { Carousel } from "react-bootstrap";
 import styles from "./style.module.css";
-import { imageGallery } from "./config/homeData";
+import { amenities, imageGallery } from "./config/homeData";
 import MembershipPlan from "./component/MembershipPlan/MembershipPlan";
 import WhyChooseUsHome from "./component/WhyChooseUsHome/WhyChooseUsHome";
 import OurWorkspaces from "./component/OurWorkspaces/OurWorkspaces";
 import CommunityTestimonials from "./component/CommunityTestimonials/CommunityTestimonials";
 import HomeContent from "./component/HomeContent/HomeContent";
-import Amenities from "./component/Amenities/Amenities";
 import PopModal from "../../components/PopModal";
 import GoogleAdsForm from "../../components/GoogleAdsForm/GoogleAdsForm";
+import AmenitiesSlider from "./component/AmenitiesSlider/AmenitiesSlider";
 
 const Home = (props) => {
   const { setTitle } = props;
@@ -84,7 +84,12 @@ const Home = (props) => {
           <MembershipPlan />
         </div>
         <div className={styles["amenities-container"]}>
-          <Amenities />
+          <div className={styles["amenities-title"]}>
+            <h2 className={styles["amenities-heading-text"]}>
+              Amenities That work for you
+            </h2>
+          </div>
+          <AmenitiesSlider images={amenities} />
         </div>
         <div className={styles["home-container"]}>
           <CommunityTestimonials />
