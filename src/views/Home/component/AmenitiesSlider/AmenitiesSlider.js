@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import styles from "./AmenitiesSlider.module.css";
 import PropTypes from "prop-types";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
@@ -6,16 +6,28 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 const AmenitiesSlider = ({ images }) => {
   const sliderRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [autoSlide] = useState(true);
+  const [autoSlide, setAutoSlide] = useState(true);
 
-  const scrollLeftRight = (newIndex) => {
-    if (newIndex < 0) {
-      setCurrentIndex(images.length - 1);
-    } else if (newIndex >= images.length) {
-      setCurrentIndex(0);
-    } else {
-      setCurrentIndex(newIndex);
-    }
+  const scrollLeftRight = useCallback(
+    (newIndex) => {
+      if (newIndex < 0) {
+        setCurrentIndex(images.length - 1);
+      } else if (newIndex >= images.length) {
+        setCurrentIndex(0);
+      } else {
+        setCurrentIndex(newIndex);
+      }
+    },
+    [images.length]
+  );
+
+  const handleManualSlide = (newIndex) => {
+    setAutoSlide(false);
+    scrollLeftRight(newIndex);
+
+    setTimeout(() => {
+      setAutoSlide(true);
+    }, 5000);
   };
 
   useEffect(() => {
@@ -26,7 +38,7 @@ const AmenitiesSlider = ({ images }) => {
     }, 3000);
 
     return () => clearInterval(interval);
-  }, [currentIndex, autoSlide, 3000]);
+  }, [currentIndex, autoSlide, scrollLeftRight]);
 
   useEffect(() => {
     if (sliderRef.current) {
@@ -39,7 +51,7 @@ const AmenitiesSlider = ({ images }) => {
     <div className={styles.sliderContainer}>
       <button
         className={styles.navButton}
-        onClick={() => scrollLeftRight(currentIndex - 1)}
+        onClick={() => handleManualSlide(currentIndex - 1)}
       >
         <FaChevronLeft />
       </button>
@@ -65,7 +77,7 @@ const AmenitiesSlider = ({ images }) => {
       </div>
       <button
         className={styles.navButton}
-        onClick={() => scrollLeftRight(currentIndex + 1)}
+        onClick={() => handleManualSlide(currentIndex + 1)}
       >
         <FaChevronRight />
       </button>

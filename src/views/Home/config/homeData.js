@@ -21,6 +21,9 @@ import saddia from "../../../assets/teamImages/saddia.jpg";
 import himanshu from "../../../assets/teamImages/himanshu.jpg";
 import anshul from "../../../assets/teamImages/anshul.jpg";
 import nikhil from "../../../assets/teamImages/nikhil.jpg";
+import parking from "../../../assets/images/parking.png";
+import powerBackup from "../../../assets/images/power_backup.png";
+import gameZone from "../../../assets/images/game_zone.png";
 
 export const imageGallery = [
   { id: 1, src: openSeat },
@@ -245,6 +248,28 @@ export const amenities = [
     id: 9,
     img: skippingRope,
     title: "CROSSFIT",
+    description:
+      "We believe that a well-rested and physically fit body can enhance your work efficiency and enable seamless higher thinking.",
+  },
+  {
+    id: 10,
+    img: parking,
+    title: "PARKING",
+    description:
+      "We believe that a well-rested and physically fit body can enhance your work efficiency and enable seamless higher thinking.",
+  },
+  {
+    id: 11,
+    img: powerBackup,
+    title: "POWER BACKUP",
+    description:
+      "We believe that a well-rested and physically fit body can enhance your work efficiency and enable seamless higher thinking.",
+  },
+
+  {
+    id: 12,
+    img: gameZone,
+    title: "GAME ZONE",
     description:
       "We believe that a well-rested and physically fit body can enhance your work efficiency and enable seamless higher thinking.",
   },
