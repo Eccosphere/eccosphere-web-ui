@@ -42,8 +42,14 @@ const AmenitiesSlider = ({ images }) => {
 
   useEffect(() => {
     if (sliderRef.current) {
-      const scrollAmount = window.innerWidth <= 768 ? "100%" : 250;
+      const scrollAmount =
+        window.innerWidth <= 768 ? sliderRef.current.offsetWidth : 250;
       sliderRef.current.scrollLeft = currentIndex * scrollAmount;
+
+      sliderRef.current.scrollTo({
+        left: currentIndex * scrollAmount,
+        block: "nearest",
+      });
     }
   }, [currentIndex]);
 
