@@ -8,29 +8,15 @@ import Gallery from "../views/Gallery";
 import Blog from "../views/Blog";
 
 const AppRoutes = () => {
-  const [title, setTitle] = useState("Eccosphere");
-
-  useEffect(() => {
-    document.title = title;
-  }, [title]);
-
   return (
     <Router>
       <EccoLayout>
         <Routes>
-          <Route exact path="/" element={<Home setTitle={setTitle} />} />
-          <Route exact path="/about" element={<About setTitle={setTitle} />} />
-          <Route
-            exact
-            path="/contact"
-            element={<Contact setTitle={setTitle} />}
-          />
-          <Route
-            exact
-            path="/gallery"
-            element={<Gallery setTitle={setTitle} />}
-          />
-          <Route exact path="/blog" element={<Blog setTitle={setTitle} />} />
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/about" element={<About />} />
+          <Route exact path="/contact" element={<Contact />} />
+          <Route exact path="/gallery" element={<Gallery />} />
+          <Route exact path="/blog" element={<Blog />} />
         </Routes>
       </EccoLayout>
     </Router>
