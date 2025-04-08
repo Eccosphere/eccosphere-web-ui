@@ -5,25 +5,21 @@ import OurMissionAndVision from "./component/OurMissionAndVision/OurMissionAndVi
 import WhyChooseUs from "./component/WhyChooseUs/WhyChooseUs";
 import OurTeam from "./component/OurTeam/OurTeam";
 import CallToAction from "./component/CallToAction/CallToAction";
-import { Helmet } from "react-helmet";
+import HelmetSeo from "../../utils/HelmetSeo";
 
 const About = () => {
   return (
     <div className={styles["about"]}>
-      <Helmet>
-        <title>About Us | Eccosphere Coworking</title>
-        <meta
-          name="description"
-          content="Learn more about Eccosphere Coworking, our mission, team, and services."
-        />
-        <meta
-          name="keywords"
-          content="about eccosphere, coworking space, team, story"
-        />
-        <meta name="author" content="Eccosphere Coworking" />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.eccosphere.com/about" />
-      </Helmet>
+      <HelmetSeo
+        title="About Us | Eccosphere Coworking"
+        description={
+          "Learn more about Eccosphere Coworking, our mission, team, and services."
+        }
+        keywords={"about eccosphere, coworking space, team, story"}
+        author={"Eccosphere Coworking"}
+        url={"https://www.eccosphere.com/about"}
+      />
+
       <div className={styles["about-container"]}>
         <div className={styles["header-div"]}>
           <h1 className={styles["heading-text"]}>

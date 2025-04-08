@@ -2,25 +2,23 @@ import React from "react";
 import styles from "./style.module.css";
 import BlogCard from "./component/BlogCard";
 import { blogData } from "./config/blogData";
-import { Helmet } from "react-helmet";
+import HelmetSeo from "../../utils/HelmetSeo";
 
 const Blog = () => {
   return (
     <div className={styles["blog"]}>
-      <Helmet>
-        <title>Blog | Eccosphere Coworking Insights</title>
-        <meta
-          name="description"
-          content="Explore coworking tips, productivity hacks, workspace trends, and updates from Eccosphere Coworking."
-        />
-        <meta
-          name="keywords"
-          content="coworking blog, office tips, productivity, startup workspace, Eccosphere blog"
-        />
-        <meta name="author" content="Eccosphere Coworking" />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.eccosphere.com/blog" />
-      </Helmet>
+      <HelmetSeo
+        title="Blog | Eccosphere Coworking Insights"
+        description={
+          "Explore coworking tips, productivity hacks, workspace trends, and updates from Eccosphere Coworking."
+        }
+        keywords={
+          "coworking blog, office tips, productivity, startup workspace, Eccosphere blog"
+        }
+        author={"Eccosphere Coworking"}
+        url={"https://www.eccosphere.com/blog"}
+      />
+
       <div className={styles["blog-container"]}>
         <div className={styles["header-div"]}>
           <h1 className={styles["heading-text"]}>

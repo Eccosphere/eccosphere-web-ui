@@ -1,19 +1,21 @@
 import React from "react";
 import styles from "./style.module.css";
 import GoogleAdsForm from "../../components/GoogleAdsForm/GoogleAdsForm";
-import { Helmet } from "react-helmet";
+import HelmetSeo from "../../utils/HelmetSeo";
 
 const Contact = () => {
   return (
     <div className={styles.contactContainer}>
-      <Helmet>
-  <title>Contact Us | Eccosphere Coworking Noida</title>
-  <meta name="description" content="Get in touch with Eccosphere for coworking space bookings, pricing, and tours." />
-  <meta name="keywords" content="contact eccosphere, coworking contact, office inquiry" />
-  <meta name="author" content="Eccosphere Coworking" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://www.eccosphere.com/contact" />
-</Helmet>
+      <HelmetSeo
+        title="Contact Us | Eccosphere Coworking Noida"
+        description={
+          "Get in touch with Eccosphere for coworking space bookings, pricing, and tours."
+        }
+        keywords={"contact eccosphere, coworking contact, office inquiry"}
+        author={"Eccosphere Coworking"}
+        url={"https://www.eccosphere.com/contact"}
+      />
+
       {/* Hero Section */}
       <section className={styles.hero}>
         <h1>Contact Us</h1>

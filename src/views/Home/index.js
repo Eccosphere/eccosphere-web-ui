@@ -11,7 +11,7 @@ import HomeContent from "./component/HomeContent/HomeContent";
 import PopModal from "../../components/PopModal";
 import GoogleAdsForm from "../../components/GoogleAdsForm/GoogleAdsForm";
 import AmenitiesSlider from "./component/AmenitiesSlider/AmenitiesSlider";
-import { Helmet } from "react-helmet";
+import HelmetSeo from "../../utils/HelmetSeo";
 
 const Home = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -30,20 +30,15 @@ const Home = () => {
 
   return (
     <div className="w-100">
-      <Helmet>
-        <title>Eccosphere | Coworking Space in Noida</title>
-        <meta
-          name="description"
-          content="Affordable coworking space and private office in Noida Sector 67."
-        />
-        <meta
-          name="keywords"
-          content="coworking, office space, Noida, Eccosphere, shared office"
-        />
-        <meta name="author" content="Eccosphere Coworking" />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.eccosphere.com/" />
-      </Helmet>
+      <HelmetSeo
+        title="Eccosphere | Coworking Space in Noida"
+        description={
+          "Affordable coworking space and private office in Noida Sector 67."
+        }
+        keywords={"coworking, office space, Noida, Eccosphere, shared office"}
+        author={"Eccosphere Coworking"}
+        url={"https://www.eccosphere.com/"}
+      />
       <div className={styles["image-container"]}>
         <Carousel
           className="w-100 h-70"
