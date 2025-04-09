@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import PropTypes from "prop-types";
 import { Carousel } from "react-bootstrap";
 import styles from "./style.module.css";
 import { amenities, imageGallery } from "./config/homeData";
@@ -118,7 +117,3 @@ const Home = () => {
 };
 
 export default Home;
-
-Home.propTypes = {
-  setTitle: PropTypes.func.isRequired,
-};
